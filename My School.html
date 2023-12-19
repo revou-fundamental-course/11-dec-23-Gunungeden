@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)http://127.0.0.1:5500/11-dec-23-Gunungeden/css/assets/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+    <link rel="stylesheet" href="./My School_files/style.css">
+</head>
+<body>    
+    <nav>
+       <div class="circle" style="background-image: url(&#39;cyberpunk.jpg&#39;);"></div>
+        <ul class="nav-item">
+            <li>Home</li>
+            <li>Our Profile </li>
+            <li>Achievement</li>
+            <li>Message Us</li>
+        </ul>
+    </nav>
+    <hr size="2px">
+    <header>
+        <h1> Hi, welcome to our website</h1>
+        <h4> Explore and enjoy your journey with us!</h4>
+        <img src="./My School_files/image.jpeg">
+        <hr size="2px">
+        <p>
+            </p><h1>Our Facilitations</h1>
+        <p></p>
+
+    </header>
+
+    <div class="facilitations">
+        
+        <div>
+            <div class="circle" style="background-image: url(&#39;image.jpeg&#39;);">
+             </div>
+                 <h4> Land Of Down</h4>
+        </div>
+        <div>
+            <div class="circle" style="background-image: url(&#39;image.jpeg&#39;);">
+             </div>
+                 <h4> Boxing Arena</h4>
+        </div>
+        <div>
+            <div class="circle" style="background-image: url(&#39;image.jpeg&#39;);">
+             </div>
+                  <h4> Football Stadium</h4>
+        </div>
+        </div>
+        <hr size="2">
+      <header>
+        <h1>Messsage Us</h1>
+      </header>
+       <form>
+        <br><br><br><br><table>
+            <tbody><tr>
+                <td>Nama:</td>
+                <td><input type="text" required=""></td>
+            </tr>
+            
+            <tr>
+                <td>Tanggal Lahir:</td>
+                <td><input type="date" required=""></td>
+            </tr>
+            
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="jk"> Laki-Laki
+                    <input type="radio" name="jk"> Perempuan
+                </td>
+            </tr>
+            
+            <tr><td>Pesan</td>
+            <td><textarea></textarea></td>
+            
+            
+        </tr></tbody></table>
+        <br>
+            
+                <input type="submit" name="submit" id="submit">
+            </form>
+                
+            
+       
+        
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
