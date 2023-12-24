@@ -1,0 +1,156 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+     font-family: Arial, Helvetica, sans-serif ;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px
+}
+
+
+header {
+    text-align: center;
+}
+header img {
+    width: 100%;
+    height: 700px;
+    margin-bottom: 40px;
+}
+
+.facilitations {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+}
+
+#submit {
+    padding:10px ;  
+    border: 1px solid grey;
+    outline: none;
+    width: 60%;
+    cursor: pointer;
+}
+#submit:hover{
+    background-color: #a59f9f;
+}  
+
+.header-wrapper{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid black;
+    padding: 16px 24px
+   
+}
+
+.header-wrapper > .menu {
+    display: flex
+}
+
+.header-wrapper > .menu > button {
+    background-color: white;
+    padding: 8px 16px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 0.3s background-color ease-out;
+}
+
+.header-wrapper > .menu > button:hover{
+    background-color: gainsboro;
+}
+
+.header-wrapper > .menu > button:first-child{
+    border-radius: 4px 0 0 4px;
+}
+
+.header-wrapper > .menu > button:last-child {
+    border-radius: 0 4px 4px 0;
+}
+
+.header-wrapper > .logo {
+    width:auto;
+    height: 40px;
+}
+
+@media screen and (max-width: 600px){
+    .header-wrapper {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+form .button input{
+    padding: 10px 0;
+    color: black;
+    outline: none;
+    background: tranparent;
+    border: 1px solid #fff;
+    width: 60%;
+    cursor: pointer;
+}
+
+ form .button input:hover{
+    background-color: #a59f9f;
+}
+
+#name,
+#date,
+#message {
+    width: 100%;
+    height: 3rem;
+    border-radius: 0,6rem;
+    margin-top: 1rem;
+}
+
+#pesan {
+    border-radius: 0.6rem;
+    width: 100%;
+    height: 10rem;
+}
+
+#submit-btn {
+    margin-top:1 rem;
+    height: 3rem;
+    width:100%;
+}
+
+.return {
+    width: 40rem;
+    margin-top: 4rem;
+    border:1px solid #8d8d8d;
+    border-radius:1rem;
+}
+
+.point {
+    font-weight: 800;
+    margin-left:1rem;
+}
+
+.return .point span {
+font-weight: 100;
+}
+
+.return .returnText {
+    display: none;
+}
+
